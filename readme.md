@@ -35,8 +35,8 @@ While it's possible to run this installation in many different environments, a `
 * The following commands will set up your environment, start the Docker containers and access the CLI of the web container
   ```bash
   cp .env.example .env
-  docker-compose up
-  docker/tools/shell.sh
+  docker compose up
+  docker compose exec laravel bash
   ```
 * Once you're at the command prompt of the container, the following commands will install any required composer modules, set up database tables and seed the database with sample data
   ```bash
