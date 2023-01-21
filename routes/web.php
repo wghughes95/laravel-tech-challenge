@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/categories', 'CategoriesController@index');
+Route::get('/categories/{category}/{sort?}', 'CategoriesController@show');
+
+Route::get('/products/{product}', 'ProductsController@show');
