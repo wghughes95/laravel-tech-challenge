@@ -19,3 +19,4 @@ Route::get('/categories', 'CategoriesController@index');
 Route::get('/categories/{category}/{sort?}', 'CategoriesController@show');
 
 Route::get('/products/{product}', 'ProductsController@show');
+Route::get('/search', 'ProductsController@search');

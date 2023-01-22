@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        ul .page-item  {
+        ul .page-item {
             display: inline;
         }
     </style>
@@ -28,11 +28,22 @@
                         <div class="hidden md:block">
                             <div class="flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                <a href="/"
+                                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page">Home</a>
                                 <a href="/categories"
                                     class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page">Categories</a>
+
+                                <form action="/search">
+                                    <div class="flex items-baseline">
+                                        <input type="text" name="search" id="search"
+                                            class="shadow appearance-none border rounded w-full p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                            placeholder="Search products">
+                                        <input type="submit"
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded focus:outline-none focus:shadow-outline">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

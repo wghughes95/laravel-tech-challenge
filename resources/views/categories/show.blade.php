@@ -48,7 +48,6 @@
                         </div>
                     </div>
 
-
                     <div class="grid grid-cols-3 gap-4">
                         @foreach ($products as $product)
                             <div class="bg-white text-center m-6">
